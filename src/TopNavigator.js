@@ -2,7 +2,6 @@
 
 import { StackNavigator } from 'react-navigation';
 import Colors from '@colors';
-import { navigateOnce } from '@utils/NavigationUtils';
 import Home from '@components/home';
 
 const navigator = StackNavigator({
@@ -19,7 +18,5 @@ const navigator = StackNavigator({
     backgroundColor: Colors.black,
   },
 });
-
-navigator.router.getStateForAction = navigateOnce(navigator.router.getStateForAction);
 
 export default navigator;
